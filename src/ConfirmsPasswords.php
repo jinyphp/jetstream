@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Jetstream;
+namespace Jiny\Jetstream;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Laravel\Fortify\Actions\ConfirmPassword;
+use Jiny\Fortify\Actions\ConfirmPassword;
 
 trait ConfirmsPasswords
 {

@@ -4,8 +4,8 @@ namespace Tests\Feature;
 
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laravel\Fortify\Features;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Fortify\Features;
+use Jiny\Jetstream\Jetstream;
 use Tests\TestCase;
 
 class RegistrationTest extends TestCase

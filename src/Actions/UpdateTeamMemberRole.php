@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Jetstream\Actions;
+namespace Jiny\Jetstream\Actions;
 
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Validator;
-use Laravel\Jetstream\Events\TeamMemberUpdated;
-use Laravel\Jetstream\Jetstream;
-use Laravel\Jetstream\Rules\Role;
+use Jiny\Jetstream\Events\TeamMemberUpdated;
+use Jiny\Jetstream\Jetstream;
+use Jiny\Jetstream\Rules\Role;
 
 class UpdateTeamMemberRole
 {

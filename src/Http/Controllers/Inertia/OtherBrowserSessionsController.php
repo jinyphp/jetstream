@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia;
+namespace Jiny\Jetstream\Http\Controllers\Inertia;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\ValidationException;
-use Laravel\Fortify\Actions\ConfirmPassword;
+use Jiny\Fortify\Actions\ConfirmPassword;
 
 class OtherBrowserSessionsController extends Controller
 {

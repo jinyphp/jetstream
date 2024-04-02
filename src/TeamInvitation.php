@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Jetstream;
+namespace Jiny\Jetstream;
 
 use Illuminate\Database\Eloquent\Model;
 

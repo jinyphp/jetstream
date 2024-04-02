@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia\Concerns;
+namespace Jiny\Jetstream\Http\Controllers\Inertia\Concerns;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
-use Laravel\Fortify\Features;
+use Jiny\Fortify\Actions\DisableTwoFactorAuthentication;
+use Jiny\Fortify\Features;
 
 trait ConfirmsTwoFactorAuthentication
 {

@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\User;
-use Laravel\Fortify\Features;
+use Jiny\Fortify\Features;
 
 test('two factor authentication can be enabled', function () {
     $this->actingAs($user = User::factory()->create());

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia;
+namespace Jiny\Jetstream\Http\Controllers\Inertia;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Jetstream;
 
 class ApiTokenController extends Controller
 {

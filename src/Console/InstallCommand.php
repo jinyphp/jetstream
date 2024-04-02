@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Jetstream\Console;
+namespace Jiny\Jetstream\Console;
 
 use Exception;
 use Illuminate\Console\Command;
@@ -14,8 +14,8 @@ use Symfony\Component\Finder\Finder;
 use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\Process;
 
-use function Laravel\Prompts\multiselect;
-use function Laravel\Prompts\select;
+use function Jiny\Prompts\multiselect;
+use function Jiny\Prompts\select;
 
 class InstallCommand extends Command implements PromptsForMissingInput
 {
@@ -159,7 +159,7 @@ class InstallCommand extends Command implements PromptsForMissingInput
         }
 
         // Sanctum...
-        (new Process([$this->phpBinary(), 'artisan', 'vendor:publish', '--provider=Laravel\Sanctum\SanctumServiceProvider', '--force'], base_path()))
+        (new Process([$this->phpBinary(), 'artisan', 'vendor:publish', '--provider=Jiny\Sanctum\SanctumServiceProvider', '--force'], base_path()))
                 ->setTimeout(null)
                 ->run(function ($type, $output) {
                     $this->output->write($output);
@@ -364,7 +364,7 @@ EOF;
         });
 
         // Sanctum...
-        (new Process([$this->phpBinary(), 'artisan', 'vendor:publish', '--provider=Laravel\Sanctum\SanctumServiceProvider', '--force'], base_path()))
+        (new Process([$this->phpBinary(), 'artisan', 'vendor:publish', '--provider=Jiny\Sanctum\SanctumServiceProvider', '--force'], base_path()))
                 ->setTimeout(null)
                 ->run(function ($type, $output) {
                     $this->output->write($output);

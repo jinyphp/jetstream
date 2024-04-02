@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Jetstream;
 use Livewire\Component;
 
 class ApiTokenManager extends Component
@@ -43,7 +43,7 @@ class ApiTokenManager extends Component
     /**
      * The token that is currently having its permissions managed.
      *
-     * @var \Laravel\Sanctum\PersonalAccessToken|null
+     * @var \Jiny\Sanctum\PersonalAccessToken|null
      */
     public $managingPermissionsFor;
 
@@ -109,7 +109,7 @@ class ApiTokenManager extends Component
     /**
      * Display the token value to the user.
      *
-     * @param  \Laravel\Sanctum\NewAccessToken  $token
+     * @param  \Jiny\Sanctum\NewAccessToken  $token
      * @return void
      */
     protected function displayTokenValue($token)

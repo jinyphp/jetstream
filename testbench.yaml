@@ -1,6 +1,6 @@
 providers:
-  - Laravel\Fortify\FortifyServiceProvider
-  - Laravel\Jetstream\JetstreamServiceProvider
+  - Jiny\Fortify\FortifyServiceProvider
+  - Jiny\Jetstream\JetstreamServiceProvider
   - Livewire\LivewireServiceProvider
 
 migrations:

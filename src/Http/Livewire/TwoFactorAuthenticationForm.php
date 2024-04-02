@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Illuminate\Support\Facades\Auth;
-use Laravel\Fortify\Actions\ConfirmTwoFactorAuthentication;
-use Laravel\Fortify\Actions\DisableTwoFactorAuthentication;
-use Laravel\Fortify\Actions\EnableTwoFactorAuthentication;
-use Laravel\Fortify\Actions\GenerateNewRecoveryCodes;
-use Laravel\Fortify\Features;
-use Laravel\Jetstream\ConfirmsPasswords;
+use Jiny\Fortify\Actions\ConfirmTwoFactorAuthentication;
+use Jiny\Fortify\Actions\DisableTwoFactorAuthentication;
+use Jiny\Fortify\Actions\EnableTwoFactorAuthentication;
+use Jiny\Fortify\Actions\GenerateNewRecoveryCodes;
+use Jiny\Fortify\Features;
+use Jiny\Jetstream\ConfirmsPasswords;
 use Livewire\Component;
 
 class TwoFactorAuthenticationForm extends Component
@@ -59,7 +59,7 @@ class TwoFactorAuthenticationForm extends Component
     /**
      * Enable two factor authentication for the user.
      *
-     * @param  \Laravel\Fortify\Actions\EnableTwoFactorAuthentication  $enable
+     * @param  \Jiny\Fortify\Actions\EnableTwoFactorAuthentication  $enable
      * @return void
      */
     public function enableTwoFactorAuthentication(EnableTwoFactorAuthentication $enable)
@@ -82,7 +82,7 @@ class TwoFactorAuthenticationForm extends Component
     /**
      * Confirm two factor authentication for the user.
      *
-     * @param  \Laravel\Fortify\Actions\ConfirmTwoFactorAuthentication  $confirm
+     * @param  \Jiny\Fortify\Actions\ConfirmTwoFactorAuthentication  $confirm
      * @return void
      */
     public function confirmTwoFactorAuthentication(ConfirmTwoFactorAuthentication $confirm)
@@ -115,7 +115,7 @@ class TwoFactorAuthenticationForm extends Component
     /**
      * Generate new recovery codes for the user.
      *
-     * @param  \Laravel\Fortify\Actions\GenerateNewRecoveryCodes  $generate
+     * @param  \Jiny\Fortify\Actions\GenerateNewRecoveryCodes  $generate
      * @return void
      */
     public function regenerateRecoveryCodes(GenerateNewRecoveryCodes $generate)
@@ -132,7 +132,7 @@ class TwoFactorAuthenticationForm extends Component
     /**
      * Disable two factor authentication for the user.
      *
-     * @param  \Laravel\Fortify\Actions\DisableTwoFactorAuthentication  $disable
+     * @param  \Jiny\Fortify\Actions\DisableTwoFactorAuthentication  $disable
      * @return void
      */
     public function disableTwoFactorAuthentication(DisableTwoFactorAuthentication $disable)

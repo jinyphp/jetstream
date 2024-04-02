@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers;
+namespace Jiny\Jetstream\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Jetstream;
 
 class CurrentTeamController extends Controller
 {

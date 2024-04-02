@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Illuminate\Support\Facades\Auth;
-use Laravel\Fortify\Contracts\UpdatesUserProfileInformation;
+use Jiny\Fortify\Contracts\UpdatesUserProfileInformation;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -49,7 +49,7 @@ class UpdateProfileInformationForm extends Component
     /**
      * Update the user's profile information.
      *
-     * @param  \Laravel\Fortify\Contracts\UpdatesUserProfileInformation  $updater
+     * @param  \Jiny\Fortify\Contracts\UpdatesUserProfileInformation  $updater
      * @return void
      */
     public function updateProfileInformation(UpdatesUserProfileInformation $updater)

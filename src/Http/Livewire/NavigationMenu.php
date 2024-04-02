@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Livewire\Component;
 

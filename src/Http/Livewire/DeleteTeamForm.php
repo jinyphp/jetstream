@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Illuminate\Support\Facades\Auth;
-use Laravel\Jetstream\Actions\ValidateTeamDeletion;
-use Laravel\Jetstream\Contracts\DeletesTeams;
-use Laravel\Jetstream\RedirectsActions;
+use Jiny\Jetstream\Actions\ValidateTeamDeletion;
+use Jiny\Jetstream\Contracts\DeletesTeams;
+use Jiny\Jetstream\RedirectsActions;
 use Livewire\Component;
 
 class DeleteTeamForm extends Component
@@ -40,8 +40,8 @@ class DeleteTeamForm extends Component
     /**
      * Delete the team.
      *
-     * @param  \Laravel\Jetstream\Actions\ValidateTeamDeletion  $validator
-     * @param  \Laravel\Jetstream\Contracts\DeletesTeams  $deleter
+     * @param  \Jiny\Jetstream\Actions\ValidateTeamDeletion  $validator
+     * @param  \Jiny\Jetstream\Contracts\DeletesTeams  $deleter
      * @return mixed
      */
     public function deleteTeam(ValidateTeamDeletion $validator, DeletesTeams $deleter)

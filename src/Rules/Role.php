@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Jetstream\Rules;
+namespace Jiny\Jetstream\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Jetstream;
 
 class Role implements Rule
 {

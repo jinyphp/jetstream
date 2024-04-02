@@ -1,7 +1,7 @@
 <?php
 
 use App\Models\User;
-use Laravel\Jetstream\Http\Livewire\TeamMemberManager;
+use Jiny\Jetstream\Http\Livewire\TeamMemberManager;
 use Livewire\Livewire;
 
 test('team members can be removed from teams', function () {

@@ -1,7 +1,7 @@
 <?php
 
-use Laravel\Jetstream\Features;
-use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
+use Jiny\Jetstream\Features;
+use Jiny\Jetstream\Http\Middleware\AuthenticateSession;
 
 return [
 

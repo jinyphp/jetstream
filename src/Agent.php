@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Jetstream;
+namespace Jiny\Jetstream;
 
 use Closure;
 use Detection\MobileDetect;

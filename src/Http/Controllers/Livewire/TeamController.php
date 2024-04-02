@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Livewire;
+namespace Jiny\Jetstream\Http\Controllers\Livewire;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Gate;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Jetstream;
 
 class TeamController extends Controller
 {

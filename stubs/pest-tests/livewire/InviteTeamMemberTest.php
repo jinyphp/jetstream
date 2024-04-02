@@ -2,9 +2,9 @@
 
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
-use Laravel\Jetstream\Features;
-use Laravel\Jetstream\Http\Livewire\TeamMemberManager;
-use Laravel\Jetstream\Mail\TeamInvitation;
+use Jiny\Jetstream\Features;
+use Jiny\Jetstream\Http\Livewire\TeamMemberManager;
+use Jiny\Jetstream\Mail\TeamInvitation;
 use Livewire\Livewire;
 
 test('team members can be invited to team', function () {

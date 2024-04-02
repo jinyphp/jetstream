@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia;
+namespace Jiny\Jetstream\Http\Controllers\Inertia;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
-use Laravel\Fortify\Features;
-use Laravel\Jetstream\Agent;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Fortify\Features;
+use Jiny\Jetstream\Agent;
+use Jiny\Jetstream\Jetstream;
 
 class UserProfileController extends Controller
 {
@@ -67,7 +67,7 @@ class UserProfileController extends Controller
      * Create a new agent instance from the given session.
      *
      * @param  mixed  $session
-     * @return \Laravel\Jetstream\Agent
+     * @return \Jiny\Jetstream\Agent
      */
     protected function createAgent($session)
     {

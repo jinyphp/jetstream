@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia;
+namespace Jiny\Jetstream\Http\Controllers\Inertia;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
-use Laravel\Fortify\Actions\ConfirmPassword;
-use Laravel\Jetstream\Contracts\DeletesUsers;
+use Jiny\Fortify\Actions\ConfirmPassword;
+use Jiny\Jetstream\Contracts\DeletesUsers;
 
 class CurrentUserController extends Controller
 {

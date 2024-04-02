@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Jetstream;
+namespace Jiny\Jetstream;
 
 use Illuminate\Support\Str;
-use Laravel\Sanctum\HasApiTokens;
+use Jiny\Sanctum\HasApiTokens;
 
 trait HasTeams
 {
@@ -132,7 +132,7 @@ trait HasTeams
      * Get the role that the user has on the team.
      *
      * @param  mixed  $team
-     * @return \Laravel\Jetstream\Role|null
+     * @return \Jiny\Jetstream\Role|null
      */
     public function teamRole($team)
     {

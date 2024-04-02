@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Livewire;
+namespace Jiny\Jetstream\Http\Livewire;
 
 use Illuminate\Support\Facades\Auth;
-use Laravel\Fortify\Contracts\UpdatesUserPasswords;
+use Jiny\Fortify\Contracts\UpdatesUserPasswords;
 use Livewire\Component;
 
 class UpdatePasswordForm extends Component
@@ -22,7 +22,7 @@ class UpdatePasswordForm extends Component
     /**
      * Update the user's password.
      *
-     * @param  \Laravel\Fortify\Contracts\UpdatesUserPasswords  $updater
+     * @param  \Jiny\Fortify\Contracts\UpdatesUserPasswords  $updater
      * @return void
      */
     public function updatePassword(UpdatesUserPasswords $updater)

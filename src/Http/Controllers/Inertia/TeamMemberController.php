@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Jetstream\Http\Controllers\Inertia;
+namespace Jiny\Jetstream\Http\Controllers\Inertia;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Laravel\Jetstream\Actions\UpdateTeamMemberRole;
-use Laravel\Jetstream\Contracts\AddsTeamMembers;
-use Laravel\Jetstream\Contracts\InvitesTeamMembers;
-use Laravel\Jetstream\Contracts\RemovesTeamMembers;
-use Laravel\Jetstream\Features;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Actions\UpdateTeamMemberRole;
+use Jiny\Jetstream\Contracts\AddsTeamMembers;
+use Jiny\Jetstream\Contracts\InvitesTeamMembers;
+use Jiny\Jetstream\Contracts\RemovesTeamMembers;
+use Jiny\Jetstream\Features;
+use Jiny\Jetstream\Jetstream;
 
 class TeamMemberController extends Controller
 {

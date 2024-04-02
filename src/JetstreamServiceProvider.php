@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Jetstream;
+namespace Jiny\Jetstream;
 
 use App\Http\Middleware\HandleInertiaRequests;
 use Illuminate\Contracts\Http\Kernel;
@@ -12,20 +12,20 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
 use Inertia\Inertia;
-use Laravel\Fortify\Events\PasswordUpdatedViaController;
-use Laravel\Fortify\Fortify;
-use Laravel\Jetstream\Http\Livewire\ApiTokenManager;
-use Laravel\Jetstream\Http\Livewire\CreateTeamForm;
-use Laravel\Jetstream\Http\Livewire\DeleteTeamForm;
-use Laravel\Jetstream\Http\Livewire\DeleteUserForm;
-use Laravel\Jetstream\Http\Livewire\LogoutOtherBrowserSessionsForm;
-use Laravel\Jetstream\Http\Livewire\NavigationMenu;
-use Laravel\Jetstream\Http\Livewire\TeamMemberManager;
-use Laravel\Jetstream\Http\Livewire\TwoFactorAuthenticationForm;
-use Laravel\Jetstream\Http\Livewire\UpdatePasswordForm;
-use Laravel\Jetstream\Http\Livewire\UpdateProfileInformationForm;
-use Laravel\Jetstream\Http\Livewire\UpdateTeamNameForm;
-use Laravel\Jetstream\Http\Middleware\ShareInertiaData;
+use Jiny\Fortify\Events\PasswordUpdatedViaController;
+use Jiny\Fortify\Fortify;
+use Jiny\Jetstream\Http\Livewire\ApiTokenManager;
+use Jiny\Jetstream\Http\Livewire\CreateTeamForm;
+use Jiny\Jetstream\Http\Livewire\DeleteTeamForm;
+use Jiny\Jetstream\Http\Livewire\DeleteUserForm;
+use Jiny\Jetstream\Http\Livewire\LogoutOtherBrowserSessionsForm;
+use Jiny\Jetstream\Http\Livewire\NavigationMenu;
+use Jiny\Jetstream\Http\Livewire\TeamMemberManager;
+use Jiny\Jetstream\Http\Livewire\TwoFactorAuthenticationForm;
+use Jiny\Jetstream\Http\Livewire\UpdatePasswordForm;
+use Jiny\Jetstream\Http\Livewire\UpdateProfileInformationForm;
+use Jiny\Jetstream\Http\Livewire\UpdateTeamNameForm;
+use Jiny\Jetstream\Http\Middleware\ShareInertiaData;
 use Livewire\Livewire;
 
 class JetstreamServiceProvider extends ServiceProvider
@@ -140,7 +140,7 @@ class JetstreamServiceProvider extends ServiceProvider
     {
         if (Jetstream::$registersRoutes) {
             Route::group([
-                'namespace' => 'Laravel\Jetstream\Http\Controllers',
+                'namespace' => 'Jiny\Jetstream\Http\Controllers',
                 'domain' => config('jetstream.domain', null),
                 'prefix' => config('jetstream.prefix', config('jetstream.path')),
             ], function () {

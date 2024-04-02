@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Laravel\Fortify\Features;
+use Jiny\Fortify\Features;
 use Tests\TestCase;
 
 class TwoFactorAuthenticationSettingsTest extends TestCase

@@ -1,14 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
-use Laravel\Jetstream\Http\Controllers\Livewire\ApiTokenController;
-use Laravel\Jetstream\Http\Controllers\Livewire\PrivacyPolicyController;
-use Laravel\Jetstream\Http\Controllers\Livewire\TeamController;
-use Laravel\Jetstream\Http\Controllers\Livewire\TermsOfServiceController;
-use Laravel\Jetstream\Http\Controllers\Livewire\UserProfileController;
-use Laravel\Jetstream\Http\Controllers\TeamInvitationController;
-use Laravel\Jetstream\Jetstream;
+use Jiny\Jetstream\Http\Controllers\CurrentTeamController;
+use Jiny\Jetstream\Http\Controllers\Livewire\ApiTokenController;
+use Jiny\Jetstream\Http\Controllers\Livewire\PrivacyPolicyController;
+use Jiny\Jetstream\Http\Controllers\Livewire\TeamController;
+use Jiny\Jetstream\Http\Controllers\Livewire\TermsOfServiceController;
+use Jiny\Jetstream\Http\Controllers\Livewire\UserProfileController;
+use Jiny\Jetstream\Http\Controllers\TeamInvitationController;
+use Jiny\Jetstream\Jetstream;
 
 Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {
     if (Jetstream::hasTermsAndPrivacyPolicyFeature()) {

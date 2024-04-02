@@ -1,5 +1,5 @@
 {
-    "name": "laravel/jetstream",
+    "name": "jiny/jetstream",
     "description": "Tailwind scaffolding for the Laravel framework.",
     "keywords": ["laravel", "tailwind", "auth"],
     "license": "MIT",
@@ -8,6 +8,10 @@
         "source": "https://github.com/laravel/jetstream"
     },
     "authors": [
+        {
+            "name": "HojinLee",
+            "email": "infohojin@gmail.com"
+        },
         {
             "name": "Taylor Otwell",
             "email": "taylor@laravel.com"
@@ -18,7 +22,7 @@
         "ext-json": "*",
         "illuminate/console": "^10.17",
         "illuminate/support": "^10.17",
-        "laravel/fortify": "^1.19",
+        "jiny/fortify": "^1.19",
         "mobiledetect/mobiledetectlib": "^4.8"
     },
     "require-dev": {
@@ -32,12 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Jetstream\\": "src/"
+            "Jiny\\Jetstream\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Jetstream\\Tests\\": "tests/",
+            "Jiny\\Jetstream\\Tests\\": "tests/",
             "App\\": "stubs/app/",
             "Database\\Factories\\": "database/factories/"
         }
@@ -48,7 +52,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Jetstream\\JetstreamServiceProvider"
+                "Jiny\\Jetstream\\JetstreamServiceProvider"
             ]
         }
     },

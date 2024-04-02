@@ -22,7 +22,7 @@
         "ext-json": "*",
         "illuminate/console": "^10.17",
         "illuminate/support": "^10.17",
-        "jiny/fortify": "^1.19",
+        "jiny/fortify": "^0.0.1",
         "mobiledetect/mobiledetectlib": "^4.8"
     },
     "require-dev": {
